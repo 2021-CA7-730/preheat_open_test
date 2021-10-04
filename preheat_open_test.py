@@ -67,4 +67,3 @@ if upload_schedule:
     DC01.request_schedule(std_plan)
 
 damper_schedule = DC01.get_schedule(schedule_start, schedule_end)
-damper_schedule = DC01.get_schedule(schedule_start, schedule_end)
