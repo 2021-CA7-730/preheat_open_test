@@ -5,8 +5,9 @@ import matplotlib.dates as mdates
 import pandas as pd
 import TimeKeeper
 TK = TimeKeeper.TimeKeeper()
+ph.logging.VERBOSE = False
 
-upload_schedule = 0
+upload_schedule = 1
 do_plot = 1
 
 
