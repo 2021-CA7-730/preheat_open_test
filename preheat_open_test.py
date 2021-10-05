@@ -5,10 +5,19 @@ import matplotlib.dates as mdates
 import pandas as pd
 import TimeKeeper
 TK = TimeKeeper.TimeKeeper()
-ph.logging.VERBOSE = False
+VERBOSE = False
 
-upload_schedule = 1
-do_plot = 1
+
+def info(self, msg: str, *args, **kwargs) -> None:
+    if VERBOSE:
+        self._get_logger().info(msg, *args, **kwargs)
+
+
+ph.logging.Logging.info = info
+
+
+upload_schedule = 0
+do_plot = 0
 
 
 b_id = 2245
